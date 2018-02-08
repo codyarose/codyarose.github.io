@@ -127,3 +127,10 @@
     height: 400px;
     display: block;
 }
+
+  #weatherApp-screenshot {
+    background: url("https://i.imgur.com/wt7pUX8.png");
+    width: 600px;
+    height: 400px;
+    display: block;
+  }
