@@ -134,3 +134,10 @@
     height: 400px;
     display: block;
   }
+
+  #wikiSearch-screenshot {
+    background: url("https://i.imgur.com/UplQMfg.png");
+    width: 600px;
+    height: 400px;
+    display: block;
+  }
