@@ -141,3 +141,32 @@
     height: 400px;
     display: block;
   }
+
+  .overlay {
+    position: absolute;
+    height: 400px;
+    width: 0px;
+    background: rgba(76, 0, 229, 0.6);
+    overflow: hidden;
+    bottom: 0px;
+    right: 0px;
+    transition: .5s ease;
+  }
+
+  .projects-container:hover .overlay {
+    width: 30%;
+    right: 0;
+  }
+
+  .content {
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    white-space: nowrap;
+  }
+
+  ul {
+    line-height: 200%;
+  }
+
