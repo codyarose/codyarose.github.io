@@ -108,11 +108,13 @@
   }
 
   .projects-container {
+    position: relative;
     margin: auto;
     width: 600px;
   }
 
   .projects-card {
+    position: relative;
     margin: auto;
     width: 600px;
     height: 400px;
@@ -169,4 +171,3 @@
   ul {
     line-height: 200%;
   }
-
