@@ -1,0 +1,152 @@
+.container {
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+	/*border: 1px solid yellow;*/
+	padding: 0;
+}
+
+.wrapper {
+	display: flex;
+}
+
+/*========== NAVBAR ====================*/
+/*.navbar {
+	background-color: #fff;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+	color: #424242;
+}
+
+.nav-item {
+	color: #545454;
+}
+
+.nav-item:hover {
+	color: #1C7AC6;
+}
+
+.navbar-nav {
+	display: flex;
+}
+
+.navbar-nav .nav-link .sign-up {
+	align-self: flex-end;
+}*/
+
+.navbar {
+	background-color: #fff;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+	color: #424242;
+}
+
+#navbar-slogan { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-style: italic; 
+}
+
+.nav-item {
+	font-family: 'Roboto', sans-serif;
+    font-weight: 300;	
+}
+
+.nav-link { 
+    text-align: right; }
+
+/*========== SIDEBAR ====================*/
+.sidebar {
+	background-color: #545454;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	/*border: 1px solid blue;*/
+	height: 100%;
+	max-width: 300px;
+	min-height: calc(100vh - 68.44px);
+	padding: 2rem 1rem 1rem 1rem;
+}
+
+.sidebar div {
+	margin-bottom: 1.5rem;
+}
+
+.sidebar .btn-secondary:hover {
+	background-color: #1B70B6;
+}
+.sidebar .btn-secondary:active {
+	background-color: #1E88D9 !important;
+}
+
+.modes {
+	align-self: center;
+	max-height: 38px;
+}
+
+.modes .btn-secondary {
+	width: 100%;
+	background-color: #1C7AC6;
+	color: #fff;
+	border: none;
+	box-shadow: 0.5px 1px 2px rgba(0,0,0,0.4);
+}
+
+.active {
+	background-color: #14609A !important;
+	border: none !important;
+	outline: 0 !important;
+	box-shadow: none;
+}
+
+input[type="text"] {
+	width: 100%;
+}
+
+.selection-info {
+	background-color: #666666;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	border-radius: 3px;
+	/*border: 1px solid orange;*/
+}
+
+.selection-info div {
+	margin-bottom: 0;
+}
+
+.selection-info .selection-info-item a {
+	color: #3FACFF;
+}
+
+.selection-info .divider {
+	height: 1px;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	background-color: #545454;
+	margin: 1rem 0;
+}
+
+.graph-button .btn-secondary {
+	width: 100%;
+	background-color: #1C7AC6;
+	color: #fff;
+	border: none;
+	box-shadow: 0.5px 1px 2px rgba(0,0,0,0.4);
+}
+
+
+/*========== GRAPH ====================*/
+.graph {
+	/*border: 1px solid #DDDDDDFF;*/
+	/*height: 100% !important;*/
+}
+
+
+/*========== GRAPH OPTIONS =================*/
+.graph-options {
+	align-items: flex-start;
+	display: flex;
+	justify-content: space-around;
+	/*border: 1px solid red;*/
+}

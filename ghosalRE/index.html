@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Ghosal - Cabin stats</title>
+
+	<!-- GOOGLE FONTS ROBOTO -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i" rel="stylesheet">
+
+	<!-- FONTAWESOME JS -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+	<!-- BOOTSTRAP CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-invert">
+  <a class="navbar-brand" href="#"> 
+    <!--LOGO-->
+    <img src="ghosalLogoCrop.png" width="100px" class="d-inline-block align-center" alt="GhosalRE"><span id="navbar-slogan">
+    &nbsp&nbsp Keep Your Cabin Competitive
+</a></span>
+    <!--MOBILE DROPDOWN-->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <!--NAV LINKS-->
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Cabin Owners<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Management Companies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Investors</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+    </span>
+  </div>
+</nav>
+	<!-- END NAVBAR -->
+	<div class="wrapper">
+		<!-- SIDEBAR -->
+		<div class="sidebar">
+
+			<!-- MODES -->
+			<div class="modes">
+				<div class="btn-group" role="group" aria-label="modes">
+				  <button type="button" class="btn btn-secondary">Cabin</button>
+				  <button type="button" class="btn btn-secondary">Company</button>
+				  <button type="button" class="btn btn-secondary">Investor</button>
+				</div>
+			</div>
+
+			<!-- SEARCH INPUT -->
+			<div class="search-input">
+				<input type="text" placeholder="Search cabins" list="cabins">
+				<datalist id="cabins">
+					<option value="Cabin Patch">
+					<option value="Aunt Bugs">
+					<option value="Auntie Belhams">
+					<option value="Cabins USA">
+					<option value="Mtn Laurel Chalets">
+					<option value="Cabins For You">
+				</datalist>
+			</div>
+
+			<!-- SELECTION INFO -->
+			<div class="selection-info">
+				<div class="selection-info-item">
+					<i class="fas fa-building"></i> Company: <a href="#"><span id="company">Link</span></a>
+				</div>
+				<span class="divider"></span>
+				<div class="selection-info-item">
+					<i class="fas fa-bed"></i> Bedrooms: <span id="bedrooms">5</span>
+				</div>
+				<span class="divider"></span>
+				<div class="selection-info-item">
+					<i class="fas fa-trophy"></i> Ranking: <span id="ranking">205 of 263</span>
+				</div>
+			</div>
+
+			<!-- GRAPH BUTTON -->
+			<div class="graph-button">
+				<button class="btn btn-secondary" id="graph-submit">Graph <i class="fas fa-chart-line"></i></button>
+			</div>
+
+			<!-- STATUS -->
+			<div class="status">
+				Status: <span id="current-status">value</span>
+			</div>
+
+		</div>
+		<!-- END SIDEBAR -->
+
+	<div class="container">
+		<!-- GRAPH OPTIONS -->
+		<div class="graph-options">
+
+				<label for="date-range">Look ahead:</label>
+				<select class="form-control" name="date-range" id="date-range">
+					<option>30 days</option>
+					<option>60 days</option>
+					<option>90 days</option>
+					<option>180 days</option>
+				</select>
+
+			<label for="datepicker">Starting date:</label>
+			<input id="datepicker" placeholder="2/15/2018">
+
+			<label for="date-range">Compare to:</label>
+			<select class="form-control" name="compare" id="compare">
+				<option>All</option>
+				<option>My Company</option>
+				<option>Unmanaged</option>
+				<option>Managed</option>
+			</select>
+		</div>
+
+		<!-- GRAPH AREA -->
+		<div class="graph">
+			<img src="download.png" alt="Chart img">
+		</div>
+
+	</div>
+</div>
+
+	<!-- BOOTSTRAP SCRIPTS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<!-- My JS -->
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
